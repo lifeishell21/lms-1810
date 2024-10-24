@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #e9ecef; /* Softer background color */
+  margin: 0;
+  padding: 0;
+}
+
+.upperLoginBody {
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../assets/img/loginBg-min.jpg");
+  background-size: cover; /* Cover the entire area */
+  background-position: center; /* Center the background */
+  position: relative; /* Position relative for overlays */
+}
+
+.containerBody {
+  width: 100%;
+  max-width: 450px; /* Restrict max width for better aesthetics */
+  background: rgba(255, 255, 255, 0.9); /* Slightly opaque background */
+  border-radius: 15px; /* More rounded corners */
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Softer shadow */
+  overflow: hidden; /* Hide overflow */
+  transition: transform 0.3s; /* Smooth transition on hover */
+}
+
+.containerBody:hover {
+  transform: translateY(-5px); /* Slight lift effect on hover */
+}
+
+.form-content {
+  padding: 40px; /* Generous padding for form content */
+}
+
+.title {
+  font-size: 28px; /* Larger title font size */
+  margin-bottom: 20px; /* Space below title */
+  font-weight: 600; /* Semi-bold font */
+  color: #333; /* Dark text color */
+  text-align: center; /* Center text alignment */
+}
+
+.error-message {
+  color: #dc3545; /* Red color for error messages */
+  margin-bottom: 10px; /* Space below error message */
+  text-align: center; /* Center text alignment */
+}
+
+.input-boxes {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-box {
+  position: relative; /* Relative positioning for icons */
+}
+
+.input-box input {
+  width: 100%;
+  padding: 12px; /* Increased padding for input */
+  border: 1px solid #ced4da; /* Light border color */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 16px; /* Font size for input */
+  transition: border-color 0.3s, box-shadow 0.3s; /* Transition for border and shadow */
+  text-indent: 30px;
+}
+
+.input-box input:focus {
+  border-color: #80bdff; /* Change border color on focus */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Subtle glow */
+}
+
+.toggle-password {
+  position: absolute;
+  right: 15px; /* Position toggle icon */
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer; /* Pointer cursor for toggle */
+}
+
+.button {
+  margin-top: 20px; /* Space above button */
+}
+
+.button input {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff; /* Primary button color */
+  color: white; /* White text color */
+  border: none; /* Remove border */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 16px; /* Font size for button */
+  cursor: pointer; /* Pointer cursor */
+  transition: background-color 0.3s, transform 0.2s; /* Transition for background and transform */
+}
+
+.button input:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+.text {
+  margin-top: 10px; /* Space above text */
+}
+
+.text a {
+  color: #007bff; /* Blue color for links */
+  text-decoration: none; /* Remove underline from links */
+  transition: color 0.3s; /* Transition for link color */
+}
+
+.text a:hover {
+  color: #0056b3; /* Darker blue on hover */
+}
+
+.sign-up-text {
+  margin-top: 10px; /* Space above sign-up text */
+  color: #333; /* Dark text color */
+  text-align: center;
+}
+
+.sign-up-text label {
+  color: #007bff; /* Blue color for sign-up text */
+  cursor: pointer; /* Pointer cursor for label */
+}
+
+
+.input-icon{
+  position: relative;
+  top: 37px;
+  left: 15px;
+}
+
+.faEyeSlash{
+  position: relative;
+  top: 12px;
+}

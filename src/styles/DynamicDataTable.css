@@ -1,0 +1,144 @@
+.datatable-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  flex: 1;
+  padding: 8px;
+  margin-right: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.export-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.export-btn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background-color: var(--header-color);
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  height: 33px;
+}
+
+.export-btn:hover {
+  background-color: #0056b3;
+}
+
+.export-btn i {
+  font-size: 14px;
+}
+
+.datatable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.datatable th,
+.datatable td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.datatable th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.highlight {
+  background-color: yellow;
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pagination button {
+  background-color: var(--header-color);
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pagination button:hover {
+  background-color: #0056b3;
+}
+
+.pagination button:disabled {
+  background-color: #ccc;
+}
+
+.pagination span {
+  font-weight: bold;
+}
+
+/*  */
+
+.download-container {
+  position: relative; /* Required for positioning the options */
+}
+
+.main-button {
+  padding: 10px 20px;
+  background-color: var(--header-color);
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.main-button:hover {
+  background-color: #0056b3;
+}
+
+.options-container {
+  display: flex;
+  flex-direction: column; /* Stack the buttons vertically */
+  position: absolute;
+  top: 50px; /* Position it below the main button */
+  left: 0;
+  animation: fadeIn 0.3s ease; /* Animation effect */
+}
+
+.download-button {
+  padding: 10px;
+  margin: 5px 0;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.download-button:hover {
+  background-color: #218838;
+}
+
+/* Keyframes for fadeIn animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px); /* Start slightly above */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* End at original position */
+  }
+}

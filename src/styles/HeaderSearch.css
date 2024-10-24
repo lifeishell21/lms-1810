@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+
+.headersearchwith-input-box {
+  position: relative;
+  height: 37px; /* Adjusted height */
+  width: 300px; /* Adjusted width */
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Poppins', sans-serif;
+}
+
+.headersearchwith-icon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: #707070;
+}
+
+.headersearchwith-input {
+  height: 100%;
+  width: 100%;
+  border: none;
+  padding: 0 50px 0 40px; /* Adjusted padding */
+  font-size: 16px;
+  outline: none;
+  background-color: transparent;
+  font-family: 'Poppins', sans-serif;
+}
+
+.headersearchwith-button {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: #fff;
+  border: none;
+  padding: 3px 6px;
+  border-radius: 4px;
+  background-color: #b1b3b9;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.headersearchwith-button:hover {
+  background-color: #365eac; /* Darker shade on hover */
+}
+
+.headersearchwith-button:active {
+  transform: translateY(-50%) scale(0.95);
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 500px) {
+  .headersearchwith-input-box {
+    width: 90%; /* Full width on small screens */
+  }
+  .headersearchwith-icon {
+    font-size: 18px;
+  }
+  .headersearchwith-input {
+    padding: 0 40px 0 30px;
+  }
+  .headersearchwith-button {
+    right: 8px;
+    padding: 6px 12px;
+  }
+}
+
+.headersearchwith-suggestions {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  max-height: 150px;
+  overflow-y: auto;
+  z-index: 10;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.headersearchwith-suggestion-item {
+  padding: 8px 12px;
+  cursor: pointer;
+  color: #000;
+}
+
+.headersearchwith-suggestion-item:hover {
+  background-color: #f0f0f0;
+}

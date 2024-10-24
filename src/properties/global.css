@@ -1,0 +1,91 @@
+/* global.css */
+
+/* Define CSS variables for global styles */
+:root {
+  /* Color Variables */
+  --primary-color: #007bff; /* Primary color for buttons and links */
+  --secondary-color: #6c757d; /* Secondary color for accents */
+  --success-color: #28a745; /* Success messages and elements */
+  --warning-color: #ffc107; /* Warning messages and elements */
+  --danger-color: #dc3545; /* Danger messages and elements */
+  --info-color: #17a2b8; /* Info messages and elements */
+  --text-default-color: #333; /* Default text color */
+  --text-white-color: #fff; /* White text color */
+  --text-light-color: #f8f9fa; /* Light text color for dark backgrounds */
+  --text-muted-color: #6c757d; /* Muted text color for less emphasis */
+  --text-highlight-color: #ffeb3b; /* Highlighted text color */
+  --background-color: #f4f4f4; /* Default background color */
+  --card-background-color: #ffffff; /* Background color for card components */
+
+  /* Enhanced Colors for Better Accessibility */
+  --hover-color: #0056b3; /* Darker shade for primary hover */
+  --secondary-hover-color: #5a6268; /* Darker shade for secondary hover */
+  --success-hover-color: #218838; /* Darker shade for success hover */
+  --warning-hover-color: #e0a800; /* Darker shade for warning hover */
+  --danger-hover-color: #c82333; /* Darker shade for danger hover */
+  --info-hover-color: #138496; /* Darker shade for info hover */
+
+  /* Font Variables */
+  --font-size: 16px; /* Base font size */
+  --font-size-small: 12px; /* Small font size for captions or small text */
+  --font-size-medium: 14px; /* Medium font size for body text */
+  --font-size-large: 20px; /* Large font size for headings */
+  --font-size-xlarge: 24px; /* Extra large font size for prominent headings */
+  --font-family: "Arial", sans-serif; /* Default font family */
+  --font-family-heading: "Georgia", serif; /* Font family for headings */
+
+  /* Spacing Variables */
+  --padding-small: 4px; /* Small padding */
+  --padding-medium: 8px; /* Medium padding */
+  --padding-large: 16px; /* Large padding */
+  --padding-xlarge: 32px; /* Extra large padding */
+  --margin-small: 4px; /* Small margin */
+  --margin-medium: 8px; /* Medium margin */
+  --margin-large: 16px; /* Large margin */
+  --margin-xlarge: 32px; /* Extra large margin */
+
+  /* Border Variables */
+  --border-radius-small: 2px; /* Small border radius */
+  --border-radius-medium: 4px; /* Medium border radius */
+  --border-radius-large: 8px; /* Large border radius */
+  --border-radius-pill: 50px; /* Pill-shaped border radius */
+  --border-color: #ddd; /* Default border color */
+
+  /* Shadow Variables */
+  --box-shadow-small: 0 1px 2px rgba(0, 0, 0, 0.1); /* Small box shadow */
+  --box-shadow-medium: 0 2px 4px rgba(0, 0, 0, 0.2); /* Medium box shadow */
+  --box-shadow-large: 0 4px 8px rgba(0, 0, 0, 0.3); /* Large box shadow */
+
+  /* Transition Variables */
+  --transition: all 0.3s ease; /* Default transition for hover effects */
+  --transition-fast: all 0.2s ease; /* Faster transition */
+  --transition-slow: all 0.5s ease; /* Slower transition */
+
+  /* Miscellaneous Variables */
+  --line-height: 1.5; /* Default line height for readability */
+  --letter-spacing: 0.5px; /* Default letter spacing */
+  --opacity-default: 0.8; /* Default opacity for elements */
+
+  /* Header background color */
+  --header-color: #5831e7; /* Header background color */
+  /* --header-color: #e73177; */
+
+  /* Sidebar background color */
+  --sidebar-hover-color: #e2e6ea; /* Sidebar hover color */
+
+/* Breadcrumbs */
+
+  /* Footer background color */
+  --footer-color: #333; /* Footer background color */
+  --footer-background: #f1f1f1; /* Footer background color */
+
+
+  
+}
+
+/* Global styles */
+body {
+  font-size: var(--font-size);
+  background-color: var(--background-color);
+  color: var(--text-default-color);
+}
